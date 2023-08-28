@@ -1,0 +1,100 @@
+.content{
+    .user-profile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .head{
+            .head-img{
+                width: 100%;
+            }
+        }
+        .body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid lightgray;
+            .profile-info{
+                display: flex;
+                flex-direction: row;
+                gap: 40px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+                .profile-info-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                .profile-text{
+                    text-align: center;
+                    span{
+                        font-size: 16px;
+                        font-family: cursive;
+                    }
+                }
+                    input{
+                        border: 1px solid grey;
+                        width: 150px;
+                        height: 25px;
+                        border-radius: 20px;
+                    }
+                .profile-subs{
+                    display: flex;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    }
+                }
+            }
+            .profile-image{
+                max-width: 130px;
+                height: 130px;
+            }
+            .black{
+                background: #1616163b;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 173px;
+                border-radius: 6px;
+            }
+            .galery-images{
+                max-width: 130px;
+                max-height: 173px;
+            }
+            .profile-menu{
+                width: 95%;
+                height: 50px;
+                margin-top: 10px;
+                ul{
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    border-top: 1px solid lightgray;
+                    gap: 40px;
+                    justify-content: center;
+                }
+            }
+            .galery{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width:290px) {
+    .body{
+            .profile-text{
+        span{
+            padding-right: 0 !important;
+        }
+    }
+    }
+
+}

@@ -1,0 +1,246 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.zoom {
+  transform: scale(2);
+}
+
+.content {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  display: flex;
+  width: 100%;
+}
+
+main {
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+main .send {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .send .btn {
+  width: 60px;
+}
+main .messager {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  border: 2px solid lightgrey;
+  height: 100%;
+}
+main .messager .message {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+  flex-direction: row;
+  border-bottom: 1px solid lightgrey;
+  align-items: center;
+}
+main .messager .message .img {
+  display: flex;
+  align-items: center;
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+main .messager .message .img img {
+  width: 100%;
+}
+main .messager .message .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main .messager .message .row .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .messager .message .row .info label {
+  color: gray;
+}
+main .messager .message-list {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+  flex-direction: row;
+  border: 1px solid lightgrey;
+  max-width: 300px;
+  border-radius: 20px;
+  margin: 5px;
+}
+main .messager .message-list .delete-btn {
+  border-radius: 30px;
+  min-width: 20px;
+  height: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: grey;
+}
+main .messager .message-list .img {
+  display: flex;
+  align-items: center;
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+main .messager .message-list .img img {
+  max-width: 100%;
+  transform-origin: center;
+}
+main .messager .message-list .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  gap: 5px;
+}
+main .messager .message-list .row .time {
+  align-self: end;
+  font-size: 11px;
+}
+main .messager .message-list .row .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+main .messager .message-list .row .info label {
+  color: gray;
+}
+main .messager .my {
+  padding: 10px;
+  align-self: flex-end;
+  flex-direction: row-reverse;
+  background: linear-gradient(45deg, rgb(152, 207, 195), rgb(86, 181, 184));
+  color: white;
+}
+main .messager .my .img {
+  display: none;
+}
+main .messager .my .info {
+  align-items: flex-end;
+  text-align: end;
+}
+main .messager .my .info label {
+  display: none;
+}
+main .messager .other {
+  align-self: flex-start;
+}
+main .messager .other .row {
+  flex-direction: row;
+}
+main .messager .other .info {
+  align-items: flex-start;
+  text-align: end;
+}
+main input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 35px;
+}
+main .main {
+  display: grid;
+  grid-template-columns: 450px 300px;
+  gap: 10px;
+}
+main .main .res {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .main .res hr {
+  width: 100%;
+  height: 1px;
+  background: lightgray;
+}
+main .main .res span {
+  color: #979797;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+main .main img {
+  width: 100%;
+  height: 100%;
+}
+main .main .cart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .main .cart .reg {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 76%;
+  padding: 30px;
+  gap: 10px;
+}
+main .main .cart .reg form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .main .cart .reg form h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+main .main .cart .reg form .facebook {
+  background-color: #03a9f4;
+  font-size: 16px;
+  color: #f6ffff;
+  font-weight: 600;
+}
+main .main .cart .reg form .facebook:hover {
+  background-color: #2196f3;
+}
+main .main .cart .help {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 100%;
+  height: 50px;
+  border: 1px solid lightgray;
+}
+main .main .cart .help a {
+  color: #2196f3;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  main .main {
+    grid-template-columns: 300px;
+  }
+  main .main .cart {
+    margin-bottom: 10px;
+  }
+  main .main .cart .reg {
+    height: 94%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .messager {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
